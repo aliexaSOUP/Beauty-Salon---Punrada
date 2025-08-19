@@ -19,7 +19,7 @@
       background-repeat: no-repeat;
       background-attachment: scroll;
       background-position: top; 
-      background-size: 100% 35%;
+      background-size: 100% 30%;
     }
 
     @media (max-width: 700px) {
@@ -63,6 +63,7 @@
       opacity: 0;
       transition: all 0.3s ease-in-out;
       z-index: -1;
+      color: black;
 
       display: flex;
       justify-content: center;
@@ -78,6 +79,39 @@
       opacity: 0;
       transition: all 0.3s ease-in-out;
       z-index: -1;
+      color: black;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal4{
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right:0;
+      bottom: 0;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      z-index: -1;
+      color: black;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal5{
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right:0;
+      bottom: 0;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      z-index: -1;
+      color: black;
 
       display: flex;
       justify-content: center;
@@ -92,6 +126,14 @@
       z-index: 999;
     }
     .modal3.open{
+      opacity: 1;
+      z-index: 999;
+    }
+    .modal4.open{
+      opacity: 1;
+      z-index: 999;
+    }
+    .modal5.open{
       opacity: 1;
       z-index: 999;
     }
@@ -152,46 +194,102 @@
     </div> 
     <div class="services-list">
       <div class="service-card-catalog" style="--service-img: url('#')">
-        <h3>Treatment 1</h3>
+        <h3>Natural Lash</h3>
         <button class="service-link-catalog" id="openModal1">More About This Product</button>
       </div>
       <div class="service-card-catalog" style="--service-img: url('#')">
-        <h3>Treatment 2</h3>
+        <h3>Glamour Lash</h3>
         <button class="service-link-catalog" id="openModal2">More About This Product</button>
       </div>
       <div class="service-card-catalog" style="--service-img: url('#')">
-        <h3>Treatment 3</h3>
+        <h3>Hybrid Lash</h3>
         <button class="service-link-catalog" id="openModal3">More About This Product</button>
+      </div>
+      <div class="service-card-catalog" style="--service-img: url('#')">
+        <h3>Mascara Look Lash</h3>
+        <button class="service-link-catalog" id="openModal4">More About This Product</button>
+      </div>
+      <div class="service-card-catalog" style="--service-img: url('#')">
+        <h3>Lash Lifting</h3>
+        <button class="service-link-catalog" id="openModal5">More About This Product</button>
       </div>
     </div>
     <div class="modal1" id="modal1">
       <div class="modalContent">
-        <h3>Treatment 1</h3>
-        <p style="text-align: justify">Lorem ipsum dolor sit amet. Aut sunt sint aut 
-        quis accusamus eum galisum saepe sed internos quas. 
-        Nam soluta molestiae in similique veritatis At omnis 
-        cupiditate quo omnis assumenda ut obcaecati laudantium 
-        sed molestiae nihil et nulla ratione. Eos voluptates magnam 
-        non numquam tempore ut consequuntur laborum. Qui accusamus 
-        eaque et laboriosam excepturi et reiciendis doloremque cum 
-        eius alias aut aspernatur excepturi.</p>
+        <h3>Natural Lash</h3>
+        <p style="text-align: justify">Our Natural Lash extensions are perfect 
+          for those who want a subtle enhancement that highlights their eyes 
+          without overpowering their natural beauty. Ideal for everyday wear, 
+          this style suits clients seeking a soft, elegant look with gentle 
+          length and volume. 
+          <br>
+          <br>
+          CHF.- 120
+          <br></p>
         <button id="closeModal1">Close</button>
       </div>
     </div>
     <div class="modal2" id="modal2">
       <div class="modalContent">
-        <h3>Treatment 2</h3>
-        <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Glamour Lash</h3>
+        <p style="text-align: justify">Our Glamour Lash extensions are designed 
+          for those who want to make a bold, striking impression. Perfect for special
+          occasions or anyone who loves a dramatic, ful-volume look, these lashes add 
+          significant length and thickness for captivating eyes. Tailored to enhance 
+          your unique eye shape, this style delivers undeniable allure and elegance.
+          <br>
+          <br>
+          CHF.- 120
+          <br></p>
         <button id="closeModal2">Close</button>
       </div>
     </div>
     <div class="modal3" id="modal3">
       <div class="modalContent">
-        <h3>Treatment 3</h3>
-        <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Hybrid Lash</h3>
+        <p style="text-align: justify">
+          Our Hybrid Lash extensions combine the best of both worlds, blending 
+          classic and volume techniques for a textured, multi-dimensional look. 
+          This versatile style is perfect for clients who want a fuller appearance 
+          without the extreme volume of our Glamour Lash. Ideal for those seeking 
+          a balanced, yet striking enhancement that suits any occasion.
+          <br>
+          <br>
+          CHF.- 170
+        </p>
         <button id="closeModal3">Close</button>
+      </div>
+    </div>
+    <div class="modal4" id="modal4">
+      <div class="modalContent">
+        <h3>Mascara Look Lash</h3>
+        <p style="text-align: justify">
+          Our Mascara Look Lash extensions are designed to mimic the effect of 
+          wearing mascara. This style is perfect for those who want the look of 
+          fuller, darker lashes without the daily application of mascara. Ideal
+          for a polished, everyday look, these lashes offer a subtle boost to 
+          your natural beauty.
+          <br>
+          <br>
+          CHF.- 150
+        </p>
+        <button id="closeModal4">Close</button>
+      </div>
+    </div>
+    <div class="modal5" id="modal5">
+      <div class="modalContent">
+        <h3>Lash Lifting</h3>
+        <p style="text-align: justify">
+          Our Lash Lifting service provides a semi-permanent curl to your natural 
+          lashes, giving them a lifted, wide-eyed appearance without the need for 
+          extensions. This treatment is perfect for those who want to enhance their 
+          natural lashes with a long-lasting curl that opens up the eyes and adds 
+          definition.
+          <br>
+          <br>
+          CHF.- 120
+        </p>
+        <button id="closeModal5">Close</button>
       </div>
     </div>
  </section>
@@ -254,6 +352,28 @@
   closeBtn3.addEventListener('click', () => {
     modal3.classList.remove("open");
   });
+
+const openBtn4 = document.getElementById('openModal4');
+const closeBtn4 = document.getElementById('closeModal4');
+const modal4 = document.getElementById('modal4');
+
+openBtn4.addEventListener('click', () => {
+  modal4.classList.add('open');
+});
+closeBtn4.addEventListener('click', () => {
+  modal4.classList.remove('open');
+});
+
+const openBtn5 = document.getElementById('openModal5');
+const closeBtn5 = document.getElementById('closeModal5');
+const modal5 = document.getElementById('modal5');
+
+openBtn5.addEventListener('click', () => {
+  modal5.classList.add('open');
+});
+closeBtn5.addEventListener('click', () => {
+  modal5.classList.remove('open');
+});
 </script>
 </body>
 </html>
