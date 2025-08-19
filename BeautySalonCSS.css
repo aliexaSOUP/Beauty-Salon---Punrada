@@ -28,7 +28,7 @@ body {
   letter-spacing: 0.14em;
   color: var(--burgundy);
   font-family: 'Abril Fatface', serif;
-  margin-right: 500px; /* add space between the brand adn the navigation bar */
+  margin-right: auto; /* add space between the brand adn the navigation bar */
 }
 
 
