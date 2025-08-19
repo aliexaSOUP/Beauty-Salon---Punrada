@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLANK | Contact Us</title>
+  <link rel="stylesheet" href="BeautySalonCSS.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; 
+      padding: 0; 
+      background-color: #fff;
+      color: #000;
+      line-height: 1.6;
+    }
+    .contact-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: var(--ivory);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    p, a {
+      font-size: 1rem;
+      color: #000;
+      text-decoration: none;
+      margin: 0.2rem 0;
+    }
+    a:hover {
+      text-decoration: None;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .social-media {
+      margin-top: 1rem;
+    }
+
+    .contact-info-row {
+    display: flex;
+    gap: 2rem;              /* space between items */
+    flex-wrap: wrap;        /* wraps to next line if viewport too narrow */
+    align-items: center;    /* vertical alignment */
+    font-size: 1rem;
+    }
+
+    .contact-item {
+    white-space: nowrap;    /* prevent breaking inside each item */
+    }
+
+
+    @media (max-width: 600px) {
+      .contact-container {
+        padding: 1rem;
+      }
+    }
+    </style>
+
+    <!-- Link to the Oswald font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Link to the Abril Fatface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="brand">BLANK</div>
+    <nav class="nav-tabs">
+        <nav class="nav-tabs">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Catalog</a>
+        <div class="dropdown-content">
+          <a href="facial treatment.html">Facial Treatment</a>
+          <a href="eyelash extension.html">Eyelash Extension</a>
+          <a href="waxing.html">Waxing</a>
+          <a href="eyebrow permanent makeup.html">Eyebrow Permanent Makeup</a>
+          <a href="men section.html">Man Grooming</a>
+        </div>
+      </div>
+      <a href="#">Contact</a>
+      <a href="#" class="book-now-tab">Book Now</a>
+    </nav>
+  </header>
+
+  <img src="ContactIllustration.png" alt="Contact us" style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 20px">
+
+    <div class="contact-container">
+        <h1>Do you have questions or want to schedule an appointment? </h1>
+        <p style="text-align:justify">Feel free to use the contact form, send us an email, or call us at your convenience. 
+        <br>Whether you have specific concerns, requests, or feedback, we look forward to 
+        hearing from you and will address your matter as soon as possible.</p>
+        <hr>
+        <div class="contact-info-row">
+            <div class="contact-item">
+                <strong>Tel:</strong> XXX XXX XX XX
+            </div>
+            <div class="contact-item">
+                <strong>Email:</strong> info@cosmeticarts.ch
+            </div>
+            <div class="contact-item">
+                <strong>Open Hours:</strong> Mo - Fr: 08:00 – 18:30
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+
+  <!-- Contact and Info Section -->
+  <footer class="footer">
+  <div class="footer-container" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 2em; padding: 2em;">
+    <div class="footer-contact" style="flex: 1 1 300px; min-width: 280px;">
+      <h2>BLANK</h2>
+      <h3>Location</h3>
+      <p>Aehrenweg 4<br>8405 Winterthur, Switzerland</p>
+      <h3>Contact Us</h3>
+      <p>Tel: XXX XXX XX XX<br>Email: example@example.example</p>
+      <h3>Open Hours</h3>
+      <p>Mo - Sa, 9:00 - 19:00</p>
+    </div>
+
+    <div class="map-container" style="flex: 1 1 300px; min-width: 280px; max-width: 600px; height: 400px;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.471964097183!2d8.75117131561683!3d47.50153867918217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a6da10a94adcb%3A0x7358f97c9c6c2057!2sAehrenweg%204%2C%208409%20Winterthur%2C%20Switzerland!5e0!3m2!1sen!2sus!4v1688144462012!5m2!1sen!2sus" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Swiper.js Carousel Library JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Your custom Swiper initialization script -->
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      speed: 2500,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      effect: 'fade',
+      fadeEffect: {
+      crossFade: true // Fades out current and in the next simultaneously for smoothness
+      },
+      grabCursor: false,
+    });
+  </script>
+</body>
+</html>
+

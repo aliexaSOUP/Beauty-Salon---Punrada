@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLANK | Home</title>
+  <link rel="stylesheet" href="BeautySalonCSS.css">
+  <!-- Swiper.js Carousel Library CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Link to the Oswald font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <!-- Link to the Abril Fatface -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="brand">BLANK</div>
+    <nav class="nav-tabs">
+      <a href="#">Home</a>
+      <div class="dropdown">
+        <a href="#">Catalog</a>
+        <div class="dropdown-content">
+          <a href="facial treatment.html">Facial Treatment</a>
+          <a href="eyelash extension.html">Eyelash Extension</a>
+          <a href="waxing.html">Waxing</a>
+          <a href="eyebrow permanent makeup.html">Eyebrow Permanent Makeup</a>
+          <a href="men section.html">Man Grooming</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="book-now-tab">Book Now</a>
+    </nav>
+  </header>
+
+  <!-- Carousel of images -->
+<div class="swiper-container carousel-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="1.png" alt="Picture 1"></div>
+    <div class="swiper-slide"><img src="dreamstimefree_2888886.jpg" alt="Picture 3"></div>
+    <!-- Add as many slides as you want -->
+  </div>
+</div>
+
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="description-box">
+      <h2 style="font-size: 1.5em;">What we offer:</h2>
+      <p style="text-align: justify">Lorem ipsum dolor sit amet. Aut sunt sint aut 
+        quis accusamus eum galisum saepe sed internos quas. 
+        Nam soluta molestiae in similique veritatis At omnis 
+        cupiditate quo omnis assumenda ut obcaecati laudantium 
+        sed molestiae nihil et nulla ratione. Eos voluptates magnam 
+        non numquam tempore ut consequuntur laborum. Qui accusamus 
+        eaque et laboriosam excepturi et reiciendis doloremque cum 
+        eius alias aut aspernatur excepturi.</p>
+    </div> 
+    <div class="services-list">
+      <div class="service-card" style="--service-img: url('facialIllustration.png')">
+        <h3>Facial Treatment</h3>
+        <a href="facial treatment.html" class="service-link">More Information</a>
+      </div>
+      <div class="service-card" style="--service-img: url('eyelashIllusatration.png')">
+        <h3>Eyelash Extension</h3>
+        <a href="eyelash extension.html#" class="service-link">More Information</a>
+      </div>
+      <div class="service-card" style="--service-img: url('waxingIllustration.png')">
+        <h3>Waxing</h3>
+        <a href="waxing.html" class="service-link">More Information</a>
+      </div>
+      <div class="service-card" style="--service-img: url('eyebrowIllustration.png')">
+        <h3>Eyebrow Permanent Makeup</h3>
+        <a href="eyebrow permanent makeup.hmtl" class="service-link">More Information</a>
+      </div>
+      <div class="service-card" style="--service-img: url('#')">
+        <h3>Man Grooming</h3>
+        <a href="man grooming.html" class="service-link">More Information</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact and Info Section -->
+  <footer class="footer">
+  <div class="footer-container" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 2em; padding: 2em;">
+    <div class="footer-contact" style="flex: 1 1 300px; min-width: 280px;">
+      <h2>BLANK</h2>
+      <h3>Location</h3>
+      <p>Aehrenweg 4<br>8405 Winterthur, Switzerland</p>
+      <h3>Contact Us</h3>
+      <p>Tel: XXX XXX XX XX<br>Email: example@example.example</p>
+      <h3>Open Hours</h3>
+      <p>Mo - Sa, 9:00 - 19:00</p>
+    </div>
+
+    <div class="map-container" style="flex: 1 1 300px; min-width: 280px; max-width: 600px; height: 400px;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.471964097183!2d8.75117131561683!3d47.50153867918217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a6da10a94adcb%3A0x7358f97c9c6c2057!2sAehrenweg%204%2C%208409%20Winterthur%2C%20Switzerland!5e0!3m2!1sen!2sus!4v1688144462012!5m2!1sen!2sus" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Swiper.js Carousel Library JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Your custom Swiper initialization script -->
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      speed: 2500,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      effect: 'fade',
+      fadeEffect: {
+      crossFade: true // Fades out current and in the next simultaneously for smoothness
+      },
+      grabCursor: false,
+    });
+  </script>
+</body>
+</html>
+

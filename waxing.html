@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLANK | Waxing</title>
+  <link rel="stylesheet" href="BeautySalonCSS.css">
+  <!-- Link to the Oswald font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <!-- Link to the Abril Fatface -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-image: url('facialtreatmentbackground.png');
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: top; 
+      background-size: 100% 35%;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        background-image: none !important;
+      }
+    }
+
+    button {
+      background-color: var(--burgundy);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .modal1{
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right:0;
+      bottom: 0;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      z-index: -1;
+      color: black;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal2{
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right:0;
+      bottom: 0;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      z-index: -1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal3{
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right:0;
+      bottom: 0;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      z-index: -1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal1.open{
+      opacity: 1;
+      z-index: 999;
+    }
+    .modal2.open{
+      opacity: 1;
+      z-index: 999;
+    }
+    .modal3.open{
+      opacity: 1;
+      z-index: 999;
+    }
+
+    .modalContent{
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 0;
+      width: 70%;
+      max-width: 500px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="brand">BLANK</div>
+    <nav class="nav-tabs">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Catalog</a>
+        <div class="dropdown-content">
+          <a href="facial treatment.html">Facial Treatment</a>
+          <a href="eyelash extension.html">Eyelash Extension</a>
+          <a href="#">Waxing</a>
+          <a href="eyebrow permanent makeup.html">Eyebrow Permanent Makeup</a>
+          <a href="men section.html">Man Grooming</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="book-now-tab">Book Now</a>
+    </nav>
+  </header>
+
+  <section class="services-catalog">
+    <div class="description-box">
+      <h2 style="font-size: 1.5em;">Waxing:</h2>
+      <p style="text-align: justify">Lorem ipsum dolor sit amet. Aut sunt sint aut 
+        quis accusamus eum galisum saepe sed internos quas. 
+        Nam soluta molestiae in similique veritatis At omnis 
+        cupiditate quo omnis assumenda ut obcaecati laudantium 
+        sed molestiae nihil et nulla ratione. Eos voluptates magnam 
+        non numquam tempore ut consequuntur laborum. Qui accusamus 
+        eaque et laboriosam excepturi et reiciendis doloremque cum 
+        eius alias aut aspernatur excepturi.</p>
+    </div> 
+    <div class="services-list">
+      <div class="service-card-catalog" style="--service-img: url('#')">
+        <h3>Treatment 1</h3>
+        <button class="service-link-catalog" id="openModal1">More About This Product</button>
+      </div>
+      <div class="service-card-catalog" style="--service-img: url('#')">
+        <h3>Treatment 2</h3>
+        <button class="service-link-catalog" id="openModal2">More About This Product</button>
+      </div>
+      <div class="service-card-catalog" style="--service-img: url('#')">
+        <h3>Treatment 3</h3>
+        <button class="service-link-catalog" id="openModal3">More About This Product</button>
+      </div>
+    </div>
+    <div class="modal1" id="modal1">
+      <div class="modalContent">
+        <h3>Treatment 1</h3>
+        <p style="text-align: justify">Lorem ipsum dolor sit amet. Aut sunt sint aut 
+        quis accusamus eum galisum saepe sed internos quas. 
+        Nam soluta molestiae in similique veritatis At omnis 
+        cupiditate quo omnis assumenda ut obcaecati laudantium 
+        sed molestiae nihil et nulla ratione. Eos voluptates magnam 
+        non numquam tempore ut consequuntur laborum. Qui accusamus 
+        eaque et laboriosam excepturi et reiciendis doloremque cum 
+        eius alias aut aspernatur excepturi.</p>
+        <button id="closeModal1">Close</button>
+      </div>
+    </div>
+    <div class="modal2" id="modal2">
+      <div class="modalContent">
+        <h3>Treatment 2</h3>
+        <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button id="closeModal2">Close</button>
+      </div>
+    </div>
+    <div class="modal3" id="modal3">
+      <div class="modalContent">
+        <h3>Treatment 3</h3>
+        <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button id="closeModal3">Close</button>
+      </div>
+    </div>
+ </section>
+  
+  <!-- Contact and Info Section -->
+  <footer class="footer">
+  <div class="footer-container" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 2em; padding: 2em;">
+    <div class="footer-contact" style="flex: 1 1 300px; min-width: 280px;">
+      <h2>BLANK</h2>
+      <h3>Location</h3>
+      <p>Aehrenweg 4<br>8405 Winterthur, Switzerland</p>
+      <h3>Contact Us</h3>
+      <p>Tel: XXX XXX XX XX<br>Email: <a href="">example@example.example</a></p>
+      <h3>Open Hours</h3>
+      <p>Mo - Sa, 9:00 - 19:00</p>
+    </div>
+
+    <div class="map-container" style="flex: 1 1 300px; min-width: 280px; max-width: 600px; height: 400px;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.471964097183!2d8.75117131561683!3d47.50153867918217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a6da10a94adcb%3A0x7358f97c9c6c2057!2sAehrenweg%204%2C%208409%20Winterthur%2C%20Switzerland!5e0!3m2!1sen!2sus!4v1688144462012!5m2!1sen!2sus" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</footer>
+
+<!--Scripts for popups-->
+<script>
+  const openBtn1 = document.getElementById('openModal1');
+  const closeBtn1 = document.getElementById('closeModal1');
+  const modal1 = document.getElementById('modal1');
+  openBtn1.addEventListener('click', () => {   // FIXED variable name here
+    modal1.classList.add("open");
+  });
+  closeBtn1.addEventListener('click', () => {
+    modal1.classList.remove("open");
+  });
+
+  const openBtn2 = document.getElementById('openModal2');
+  const closeBtn2 = document.getElementById('closeModal2'); 
+  const modal2 = document.getElementById('modal2');
+  openBtn2.addEventListener('click', () => {
+    modal2.classList.add("open");
+  });
+  closeBtn2.addEventListener('click', () => {
+    modal2.classList.remove("open");
+  });
+
+  const openBtn3 = document.getElementById('openModal3');
+  const closeBtn3 = document.getElementById('closeModal3');
+  const modal3 = document.getElementById('modal3');
+  openBtn3.addEventListener('click', () => {
+    modal3.classList.add("open");
+  });
+  closeBtn3.addEventListener('click', () => {
+    modal3.classList.remove("open");
+  });
+</script>
+</body>
+</html>
+
